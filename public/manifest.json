@@ -1,0 +1,30 @@
+{
+  "name": "Crypto Test",
+  "description": "Browser Extension to test crypto on Manifest V3",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "Crypto Test",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ]
+    }
+  ],
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms", "notifications"]
+}
