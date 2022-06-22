@@ -1,10 +1,9 @@
+// import '@polkadot/wasm-crypto/initOnlyAsm';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import '@/style/popup.scss';
 import { Route, Routes, HashRouter } from 'react-router-dom';
 import { AppBar, Box, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import { AccountCircle } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
 import { cryptoWaitReady } from '@polkadot/util-crypto';
 import { Keyring } from '@polkadot/api';
